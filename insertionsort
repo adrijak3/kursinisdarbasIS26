@@ -1,1 +1,11 @@
+void insertionSort(int masyvas[], int dydis)
+{
+    for(int i = 1; i < dydis; i++)
+    { int elementas = masyvas[i];
+        int j = i - 1;
+        while(j >= 0 && masyvas[j] > elementas)
+        { masyvas[j + 1] = masyvas[j];
+            j--;
+        }
+        masyvas[j + 1] = elementas;}}
 
